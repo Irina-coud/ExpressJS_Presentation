@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Express JS</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section class="slide1">
+				<img src="/examples/assets/mainImage.jpg" width="100%" height="100%" alt="">
+				<p>Presentation by Ira Tobolich</p>
+			</section>
+			<section class="slide2">
+				<img src="/examples/assets/advantage.jpg" width="100%" height="100%" alt="">
+				<p>The main advantage is scalability</p>
+			</section>
+			<section class="slide3">
+				<img src="/examples/assets/express.jpg" alt="">
+				<p>Express is the most popular Node web framework that implements a layer of functionality needed to build
+					efficient
+					applications and APIs.</p>
+			</section>
+			<section class="slide4">
+				<p>npm install express --save</p>
+				<img src="/examples/assets/exNPM.png" alt="">
+			</section>
+			<section class="slide5">
+				<div>
+					<p>Node</p>
+					<img src="/examples/assets/server-node.png" alt="" width="340px" height="680px">
+					<img src="/examples/assets/server-express.png" alt="" width="400px" height="500px">
+					<p>Express</p>
+				</div>
+			</section>
+			<section class="slide6">
+				<h3>Routing</h3>
+				<img src="/examples/assets/routing1.png" alt="" width="600px">
+				<div class="box">
+					<div>
+						<p><span>app</span> - instance of express.</p>
+						<p><span>METHOD</span> - HTTP request method.</p>
+						<p><span>PATH</span> - path on the server.</p>
+						<p><span>HANDLER</span> - function to be executed when the route is matched.</p>
+					</div>
+					<div>
+						<p>Response to a POST request in the root route (/), on the application's home page:</p>
+						<img src="/examples/assets/routing2.png" alt="">
+					</div>
+				</div>
+			</section>
+			<section class="slide7">
+				<h3>All()</h3>
+				<img src="/examples/assets/routingAll.png" alt="">
+			</section>
+			<section class="slide8">
+				<h5>Route paths</h5>
+				<p>Examples</p>
+				<div class="slide8-sub">
+					<div class="example-box">
+						<p>This route path maps requests to /about</p>
+						<p>Example route path based on string pattern</p>
+						<p>Route Path Example Based on a Regular Expression</p>
+					</div>
+					<div>
+						<img src="/examples/assets/pathAbout.png" alt="" width="500px">
+						<img src="/examples/assets/pathPattern.png" alt="" width="500px">
+						<img src="/examples/assets/pathReg.png" alt="" width="500px">
+					</div>
+				</div>
+			</section>
+			<section class="slide9">
+				<h3>Route Handlers</h3>
+				<div class="up">
+					<img src="/examples/assets/func1.png" alt="" width="600px">
+					<img src="/examples/assets/func2.png" alt="" width="380px">
+				</div>
+				<div class="up">
+					<img src="/examples/assets/func3.png" alt="" width="350px">
+					<img src="/examples/assets/func4.png" alt="" width="380px">
+				</div>
+			</section>
+			<section class="slide10">
+				<h3>Response Methods</h3>
+				<img src="/examples/assets/table.png" alt="">
+			</section>
+			<section class="slide11">
+				<h3>express.Router</h3>
+				<div class="box">
+					<div class="example-box">
+						<p>Create a router file named birds.js in the application directory with the following content:</p>
+						<p>Then load the routing module into the application:</p>
+					</div>
+					<div>
+						<img src="/examples/assets/express.route1.png" alt="" width="500px">
+						<img src="/examples/assets/express.route2.png" alt="" width="600px">
+					</div>
+				</div>
+			</section>
+			<section class="slide12">
+				<h3>Static()</h3>
+				<img src="/examples/assets/static.png" alt="" width="600px">
+				<p>If you have two directories with static files,
+					they should be accessed depending on the requested URL.
+				</p>
+				<img src="/examples/assets/staticExample.png" alt="" width="650px">
+			</section>
+			<section class="slide13">
+				<h3>Middleware</h3>
+				<p>Middleware functions can perform the following tasks:</p>
+				<ul>
+					<li>Execution of any code</li>
+					<li>Making changes to request and response objects</li>
+					<li>Completion of the request-response cycle</li>
+					<li>Call the next middleware on the stack</li>
+				</ul>
+			</section>
+			<section class="slide14">
+				<p>Example:</p>
+				<img src="/examples/assets/midlewexa.png" alt="">
+			</section>
+			<section class="slide15">
+				<h3>Template Engines in Express / Set()</h3>
+				<img src="/examples/assets/set.png" alt="">
+				<p>views - path to the directory where the templates are located</p>
+				<p>view engine - an indication of the template engine itself</p>
+			</section>
+			<section class="slide16">
+				<h3> Error processing</h3>
+				<img src="/examples/assets/error1.png" alt="" width="600px">
+				<img src="/examples/assets/error2.png" alt="" width="600px">
+			</section>
+			<section class="slide17">
+				<h3>Debug</h3>
+				<img src="/examples/assets/debug1.png" alt="">
+				<p>For Windows:</p>
+				<img src="/examples/assets/debug2.png" alt="">
+			</section>
+			<section class="slide18">
+				<h3>Database</h3>
+				<ul>
+					<li>Cassandra</li>
+					<li>CouchDB</li>
+					<li>LevelDB</li>
+					<li>MySQL</li>
+					<li>MongoDB</li>
+					<li>Neo4j</li>
+					<li>PostgreSQL</li>
+					<li>Redis</li>
+					<li>SQLite</li>
+					<li>ElasticSearch</li>
+				</ul>
+			</section>
+			<section class="slide19">
+				<img src="/examples/assets/mainImage.jpg" alt="">
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>

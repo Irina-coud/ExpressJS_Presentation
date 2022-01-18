@@ -1,0 +1,162 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v4.0 | 20180602
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+.slide2 p {
+  color: green;
+}
+.slide4 p {
+  font-size: 25px;
+  color: green;
+}
+.slide5 div {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+.slide12 p {
+  font-size: 22px;
+}
+.slide6 p {
+  font-size: 22px;
+  text-align: start;
+}
+.slide6 p span {
+  color: green;
+}
+.box {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.slide8-sub {
+  display: flex;
+}
+.slide8 p {
+  font-size: 22px;
+}
+.example-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.slide9 div {
+  display: flex;
+  justify-content: space-between;
+}
+.up {
+  margin: -50px 0 0 0;
+}
+.slide11 p {
+  font-size: 22px;
+}
+.slide15 p {
+  text-align: start;
+  font-size: 24px;
+  padding: 0 0 0 70px;
+}
